@@ -51,14 +51,14 @@ public class chooseAreaActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SharedPreferences prefs = PreferenceManager.
-                getDefaultSharedPreferences(this);
-        if (prefs.getBoolean("city_selected", false)) {
-            Intent intent = new Intent(this, WeatherActivity.class);
-            startActivity(intent);
-            finish();
-            return;
-        }
+//        SharedPreferences prefs = PreferenceManager.
+//                getDefaultSharedPreferences(this);
+//        if (prefs.getBoolean("city_selected", false)) {
+//            Intent intent = new Intent(this, WeatherActivity.class);
+//            startActivity(intent);
+//            finish();
+//            return;
+//        }
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.choose_area);
         listView = (ListView)findViewById(R.id.list_view);
@@ -81,6 +81,7 @@ public class chooseAreaActivity extends Activity {
                 }
                 else if (currentLevel == LEVEL_COUNTY) {
                     String countyCode = countyList.get(i).getCountyCode();
+                    Log.d("main", "城市编号:" + countyCode);
                     Intent intent = new Intent(chooseAreaActivity.this,
                             WeatherActivity.class);
                     intent.putExtra("county_code", countyCode);
