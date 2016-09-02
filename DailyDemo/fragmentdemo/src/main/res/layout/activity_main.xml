@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="test.cyz.com.fragmentdemo.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/title_category"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background=""/>
+
+    <FrameLayout
+        android:id="@+id/frag_content"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+       >
+     </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_titleBar"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#383838"
+            >
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="消息"/>
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="联系人"/>
+
+            <TextView
+                android:id="@+id/tv_newText"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="动态"/>
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="设置"/>
+
+        </LinearLayout>
+</LinearLayout>
