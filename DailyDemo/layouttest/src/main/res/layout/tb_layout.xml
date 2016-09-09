@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,3"
+    android:shrinkColumns="1"
+    android:collapseColumns="5">
+
+    <TableRow>
+        <Button android:text="快"/>
+        <Button android:text="来"/>
+        <Button android:text="点"/>
+        <Button android:text="哈"/>
+    </TableRow>
+
+    <TableRow>
+        <Button android:text="我"/>
+        <Button android:text="最"/>
+        <Button android:text="屌"
+                android:layout_column="3"/>
+    </TableRow>
+
+    <TableRow>
+        <Button android:text="你是对内哦上门服务I股为难"/>
+        <Button android:text="是电话高科技杀个win"/>
+        <Button android:text="谁"
+        android:layout_span="2"
+            android:layout_column="3"/>
+    <!--<Button android:text=""/>-->
+    </TableRow>
+</TableLayout>

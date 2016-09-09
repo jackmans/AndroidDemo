@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="6"
+    android:columnCount="4"
+    android:id="@+id/grid_cal">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        android:background="#eeeeee"
+        android:text="0"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_columnSpan="4"/>
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:text="Clear"
+        android:textSize="30dp"
+        android:padding="5dp" />
+</GridLayout>
