@@ -7,16 +7,10 @@
     tools:context="test.cyz.com.fragmentdemo.MainActivity"
     android:weightSum="1">
 
-    <LinearLayout
-        android:id="@+id/title_category"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:background=""/>
 
     <FrameLayout
         android:id="@+id/frag_content"
-        android:layout_height="1dp"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_weight="1"
        >
